@@ -1,0 +1,9 @@
+{
+    "name": "canvaslayer",
+    "version": "0.0.0",
+    "description": "CanvasLayer - A Google Maps API utility library",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Aletheios/CanvasLayer.git"
+    }
+}
