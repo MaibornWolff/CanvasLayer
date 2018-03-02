@@ -19,6 +19,13 @@
  * @author Brendan Kenny
  */
 
+(function(){
+
+// Don't do anything if Google Maps is not available
+if (!google || !google.maps) {
+  return;
+}
+
 /**
  * A map layer that provides a canvas over the slippy map and a callback
  * system for efficient animation. Requires canvas and CSS 2D transform
@@ -545,3 +552,7 @@ CanvasLayer.prototype.scheduleUpdate = function() {
         this.requestAnimFrame_.call(window, this.requestUpdateFunction_);
   }
 };
+
+window.CanvasLayer = CanvasLayer;
+
+})();
