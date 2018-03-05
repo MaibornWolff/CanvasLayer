@@ -22,7 +22,7 @@
 (function(){
 
 // Don't do anything if Google Maps is not available
-if (!google || !google.maps) {
+if (!window.google || !window.google.maps) {
   return;
 }
 
